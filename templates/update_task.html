@@ -1,11 +1,12 @@
 {% extends 'list.html' %}
 {% block content %}
 
-<h3>Update Task</h3>
-
-<form method="POST" action="/">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" name="Update Task">
-</form>
+<div class="center-column">
+    <h5>Update Task</h5>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form }}
+        <input class="btn btn-primary" type="submit" name="Update Task">
+    </form>
+</div>
 {% endblock content %}
